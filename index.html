@@ -54,11 +54,11 @@
           <tr onmouseout="bidiff_stop()" onmouseover="bidiff_start()">
 			      <td style="padding:10px;width:40%;vertical-align:middle">
 			        <div class="one" style="width:100%">
-			          <div class="two" id='bidiff_image' style="width:100%"><video  width=100% muted autoplay loop>
-			          <source src="images/eagle.gif" type="video/gif">
-			          Your browser does not support the video tag.
+			          <div class="two" id='bidiff_image' style="width:100%"></video  width=100% muted autoplay loop>
+			          <img src="images/gundam.gif" style="width:100%">
+			          
 			          </video></div>
-			          <img src='images/gundam.gif' style="width:100%">
+			          <img src='images/eagle2.gif' style="width:100%">
 			        </div>
 			        <script type="text/javascript">
 			          function bidiff_start() {
@@ -68,7 +68,7 @@
 			          function bidiff_stop() {
 			            document.getElementById('bidiff_image').style.opacity = "0";
 			          }
-			          refnerf_stop()
+			          bidiff_stop()
 			        </script>
 			      </td>
 			            <td style="padding:10px;width:60%;vertical-align:middle">
@@ -115,7 +115,7 @@
                   function objnerf_stop() {
                     document.getElementById('objnerf_image').style.opacity = "0";
                   }
-                  refnerf_stop()
+                  objnerf_stop()
                 </script>
               </td>
                     <td style="padding:10px;width:60%;vertical-align:middle">
@@ -138,7 +138,52 @@
                   <p></p>
                   <p>We propose Obj-NeRF, a novel comprehensive pipeline to extract object NeRFs from multi-view images, which can be used for NeRF editing tasks.</p>
                 </td>
-              </tr>  
+              </tr>
+          
+              <tr onmouseout="adapt_stop()" onmouseover="adapt_start()">
+                <td style="padding:10px;width:40%;vertical-align:middle">
+                  <div class="one" style="width:100%">
+                    <div class="two" id='objnerf_image' style="width:100%"><video  width=100% muted autoplay loop>
+                    <source src="images/adapt.jpg" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/adapt.jpg' style="width:100%">
+                  </div>
+                  <script type="text/javascript">
+                    function adapt_start() {
+                      document.getElementById('adapt_image').style.opacity = "1";
+                    }
+    
+                    function adapt_stop() {
+                      document.getElementById('adapt_image').style.opacity = "0";
+                    }
+                    adapt_stop()
+                  </script>
+                </td>
+                      <td style="padding:10px;width:60%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Sample-adaptive_Augmentation_for_Point_Cloud_Recognition_Against_Real-world_Corruptions_ICCV_2023_paper.pdf">
+                      <papertitle>Sample-adaptive Augmentation for Point Cloud Recognition
+                        Against Real-world Corruptions</papertitle>
+                    </a>
+                    <br>
+                    Jie Wang,
+                    <strong>Lihe Ding</strong>,
+                    Tingfa Xu,
+                    Shaocong Dong,
+                    Xinli Xu,
+                    Long Bai,
+                    Jianan Li
+                    <!-- <a href="https://tianfan.info/">Tianfan Xue</a>† -->
+                    <br>
+              <em>ICCV</em>, 2023
+                    <br>
+                    <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Sample-adaptive_Augmentation_for_Point_Cloud_Recognition_Against_Real-world_Corruptions_ICCV_2023_paper.pdf">paper</a>
+              /
+                    <a href="https://github.com/Roywangj/AdaptPoint">code</a>
+                    <p></p>
+                    <p>we propose an alternative to make sample-adaptive transformations based on the structure of the sample to cope with potential corruption via an auto-augmentation framework.</p>
+                  </td>
+                </tr>
 
           <tr onmouseout="fhnet_stop()" onmouseover="fhnet_start()">
 			      <td style="padding:10px;width:40%;vertical-align:middle">
