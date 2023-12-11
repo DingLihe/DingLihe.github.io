@@ -45,12 +45,101 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My previous work mainly focused on <span class="highlight">3D perception on Point Clouds</span>. I have also been working on NeRF and Diffusion Model for 3D generation. (*: Equal Contribution †: Corresponding Author)
+                I have been working on <span class="highlight">NeRF</span> and <span class="highlight">Diffusion Model</span> for 3D generation. My previous work also included <span class="highlight">3D perception on Point Clouds</span>. (*: Equal Contribution †: Corresponding Author)
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="bidiff_stop()" onmouseover="bidiff_start()">
+			      <td style="padding:10px;width:40%;vertical-align:middle">
+			        <div class="one" style="width:100%">
+			          <div class="two" id='bidiff_image' style="width:100%"><video  width=100% muted autoplay loop>
+			          <source src="images/eagle.gif" type="video/gif">
+			          Your browser does not support the video tag.
+			          </video></div>
+			          <img src='images/gundam.gif' style="width:100%">
+			        </div>
+			        <script type="text/javascript">
+			          function bidiff_start() {
+			            document.getElementById('bidiff_image').style.opacity = "1";
+			          }
+
+			          function bidiff_stop() {
+			            document.getElementById('bidiff_image').style.opacity = "0";
+			          }
+			          refnerf_stop()
+			        </script>
+			      </td>
+			            <td style="padding:10px;width:60%;vertical-align:middle">
+			          <a href="https://bidiff.github.io/">
+			            <papertitle>Text-to-3D Generation with Bidirectional Diffusion using both 2D and 3D priors</papertitle>
+			          </a>
+			          <br>
+			          <strong>Lihe Ding*</strong>,
+			          Shaocong Dong*,
+                Zhanpeng Huang,
+			          Zibin Wang†,
+                Yiyuan Zhang,
+                Kaixiong Gong,
+			          Dan Xu,
+                Tianfan Xue
+			          <!-- <a href="https://tianfan.info/">Tianfan Xue</a>† -->
+			          <br>
+			    <em>arXiv</em>, 2023
+			          <br>
+			          <a href="https://bidiff.github.io/">project page</a>
+			    /
+			          <a href="https://arxiv.org/abs/2312.04963">paper</a>
+			    /
+			          <a href="https://www.youtube.com/watch?v=3AHDbJlGKwY">video</a>
+			          <p></p>
+			          <p>We intergrate both 3D and 2D diffusion models with powerful priors into a unified framework with bidirectional guidance.</p>
+			        </td>
+			      </tr>
+          
+            <tr onmouseout="objnerf_stop()" onmouseover="objnerf_start()">
+              <td style="padding:10px;width:40%;vertical-align:middle">
+                <div class="one" style="width:100%">
+                  <div class="two" id='objnerf_image' style="width:100%"><video  width=100% muted autoplay loop>
+                  <source src="images/objnerf.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/objnerf.mp4' style="width:100%">
+                </div>
+                <script type="text/javascript">
+                  function bidiff_start() {
+                    document.getElementById('objnerf_image').style.opacity = "1";
+                  }
+  
+                  function bidiff_stop() {
+                    document.getElementById('objnerf_image').style.opacity = "0";
+                  }
+                  refnerf_stop()
+                </script>
+              </td>
+                    <td style="padding:10px;width:60%;vertical-align:middle">
+                  <a href="https://bidiff.github.io/">
+                    <papertitle>Obj-NeRF: Extracting Object NeRFs from Multi-view Images</papertitle>
+                  </a>
+                  <br>
+                  Zhiyi Li,
+                  <strong>Lihe Ding</strong>,
+                  Tianfan Xue
+                  <!-- <a href="https://tianfan.info/">Tianfan Xue</a>† -->
+                  <br>
+            <em>arXiv</em>, 2023
+                  <br>
+                  <a href="https://objnerf.github.io/">project page</a>
+            /
+                  <a href="https://arxiv.org/abs/2311.15291">paper</a>
+            /
+                  <a href="https://www.youtube.com/watch?v=VEwYrSPFatg">video</a>
+                  <p></p>
+                  <p>We propose Obj-NeRF, a novel comprehensive pipeline to extract object NeRFs from multi-view images, which can be used for NeRF editing tasks.</p>
+                </td>
+              </tr>  
+
           <tr onmouseout="fhnet_stop()" onmouseover="fhnet_start()">
 			      <td style="padding:10px;width:40%;vertical-align:middle">
 			        <div class="one" style="width:100%">
