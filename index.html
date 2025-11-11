@@ -97,6 +97,49 @@
               </td>
             </tr>
 
+            <tr onmouseout="objnerf_stop()" onmouseover="objnerf_start()">
+              <td style="padding:10px;width:40%;vertical-align:middle">
+                <div class="one" style="width:100%">
+                  <div class="two" id='objnerf_image' style="width:100%"><video  width=100% muted autoplay loop>
+                  <source src="images/copart.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <!-- <img src='images/objnerf.png' style="width:100%"> -->
+                </div>
+                <script type="text/javascript">
+                  function objnerf_start() {
+                    document.getElementById('objnerf_image').style.opacity = "1";
+                  }
+  
+                  function objnerf_stop() {
+                    document.getElementById('objnerf_image').style.opacity = "0";
+                  }
+                  objnerf_stop()
+                </script>
+              </td>
+                    <td style="padding:10px;width:60%;vertical-align:middle">
+                  <a href="https://hkdsc.github.io/project/copart/">
+                    <papertitle>From One to More: Contextual Part Latents for 3D Generation</papertitle>
+                  </a>
+                  <br>
+                  Shaocong Dong*,
+                  <strong>Lihe Ding*</strong>,
+                  Xiao Chen, Yaokun Li, Yuxin Wang, Yucheng Wang, Qi Wang, Jaehyeok Kim, Chenjian Gao, Zhanpeng Huang, Zibin Wang,
+                  Tianfan Xue†,
+                  Dan Xu†
+                  <!-- <a href="https://tianfan.info/">Tianfan Xue</a>† -->
+                  <br>
+            <em>ICCV</em>, 2025
+                  <br>
+                  <a href="https://hkdsc.github.io/project/copart/">project page</a>
+            /
+                  <a href="https://arxiv.org/abs/2507.08772">paper</a>
+            /
+                  <a href="https://huggingface.co/datasets/dscdyc/partverse">dataset</a>
+                  <p></p>
+                  <p>Copart generates 3d parts from contextual part latents and supports various application, such as articulation modeling.</p>
+                </td>
+              </tr>  
 
             <tr onmouseout="objnerf_stop()" onmouseover="objnerf_start()">
               <td style="padding:10px;width:40%;vertical-align:middle">
@@ -261,50 +304,6 @@
                       models.</p>
                   </td>
                 </tr>
-
-          <tr onmouseout="objnerf_stop()" onmouseover="objnerf_start()">
-            <td style="padding:10px;width:40%;vertical-align:middle">
-              <div class="one" style="width:100%">
-                <div class="two" id='objnerf_image' style="width:100%"><video  width=100% muted autoplay loop>
-                <source src="images/copart.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <!-- <img src='images/objnerf.png' style="width:100%"> -->
-              </div>
-              <script type="text/javascript">
-                function objnerf_start() {
-                  document.getElementById('objnerf_image').style.opacity = "1";
-                }
-
-                function objnerf_stop() {
-                  document.getElementById('objnerf_image').style.opacity = "0";
-                }
-                objnerf_stop()
-              </script>
-            </td>
-                  <td style="padding:10px;width:60%;vertical-align:middle">
-                <a href="https://hkdsc.github.io/project/copart/">
-                  <papertitle>From One to More: Contextual Part Latents for 3D Generation</papertitle>
-                </a>
-                <br>
-                Shaocong Dong*,
-                <strong>Lihe Ding*</strong>,
-                Xiao Chen, Yaokun Li, Yuxin Wang, Yucheng Wang, Qi Wang, Jaehyeok Kim, Chenjian Gao, Zhanpeng Huang, Zibin Wang,
-                Tianfan Xue†,
-                Dan Xu†
-                <!-- <a href="https://tianfan.info/">Tianfan Xue</a>† -->
-                <br>
-          <em>ICCV</em>, 2025
-                <br>
-                <a href="https://hkdsc.github.io/project/copart/">project page</a>
-          /
-                <a href="https://arxiv.org/abs/2507.08772">paper</a>
-          /
-                <a href="https://huggingface.co/datasets/dscdyc/partverse">dataset</a>
-                <p></p>
-                <p>Copart generates 3d parts from contextual part latents and supports various application, such as articulation modeling.</p>
-              </td>
-            </tr>
 
           <tr onmouseout="objnerf_stop()" onmouseover="objnerf_start()">
             <td style="padding:10px;width:40%;vertical-align:middle">
