@@ -53,6 +53,49 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+          <tr onmouseout="adapt_stop()" onmouseover="adapt_start()">
+            <td style="padding:10px;width:40%;vertical-align:middle">
+              <div class="one" style="width:100%">
+                <div class="two" id='objnerf_image' style="width:100%"><video  width=100% muted autoplay loop>
+                <source src="images/4dvae.png" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/4dvae.png' style="width:100%">
+              </div>
+              <script type="text/javascript">
+                function adapt_start() {
+                  document.getElementById('adapt_image').style.opacity = "1";
+                }
+
+                function adapt_stop() {
+                  document.getElementById('adapt_image').style.opacity = "0";
+                }
+                adapt_stop()
+              </script>
+            </td>
+                  <td style="padding:10px;width:60%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2508.13628">
+                  <papertitle>Native Spatio-temporal 4D Variational AutoEncoder</papertitle>
+                </a>
+                <br>
+                <strong>Lihe Ding</strong>,
+                Weicai Ye†,
+                Shaocong Dong,
+                Xintao Wang,
+                Pengfei Wan,
+                Kun Gai,
+                Tianfan Xue†
+                <!-- <a href="https://tianfan.info/">Tianfan Xue</a>† -->
+                <br>
+          <em>ICML</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2508.13628">paper</a>
+                <p></p>
+                <p>We present a novel 4D VAE that operates directly in native 4D space, that is dynamic colored voxel space, without 2D projection.</p>
+              </td>
+            </tr>
+          
+          
           <tr onmouseout="objnerf_stop()" onmouseover="objnerf_start()">
             <td style="padding:10px;width:40%;vertical-align:middle">
               <div class="one" style="width:100%">
